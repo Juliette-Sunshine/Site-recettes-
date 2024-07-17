@@ -2,7 +2,6 @@
 
 main {
   margin: 0;
-  font-family: Arial, sans-serif;
   box-sizing: border-box;
   text-align: center;
 }
@@ -15,14 +14,14 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 20px 20px;
-  width: 600px;
+  width: 1200px;
   margin: auto; /* Centrer la galerie horizontalement */
 }
 
 .flex-container > * {
   border: 2px solid white;
   border-radius: 8px;
-  box-shadow: 5px 5px 5px cyan;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.452);
   box-sizing: content-box;
   flex: 1 1 calc(33.333% - 40px); /* Ajuste la taille des éléments pour trois par ligne avec espacement */
   margin: 0;
@@ -36,9 +35,36 @@ p {
 
 /* Paramétrage des balises img */
 img {
+  height: 200px;
   width: 100%;
   border-radius: 8px;
   object-fit: cover;
+}
+
+/* Agrandissement image au survole (:hover) */
+
+.food1:hover img {
+  transform: scale(1.5);
+}
+
+.food2:hover img {
+  transform: scale(1.5);
+}
+
+.food3:hover img {
+  transform: scale(1.5);
+}
+
+.food4:hover img {
+  transform: scale(1.5);
+}
+
+.food5:hover img {
+  transform: scale(1.5);
+}
+
+.food6:hover img {
+  transform: scale(1.5);
 }
 
 /* Ajustement pour petits écrans */
